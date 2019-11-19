@@ -538,7 +538,7 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
+  /* margin-right: -15px; */
   margin-left: -15px;
   }
 
@@ -547,12 +547,18 @@ pre {
   margin-left: 0;
   /* padding: 2em 15em; */
   /* padding-top: 0px; */
+  padding-bottom: 40px;
+  justify-content: center;
   }
   .no-gutters > .col,
   .no-gutters > [class*="col-"] {
     /* padding-right: 0; */
     /* padding-left: 0; */
     padding: 4em 3em;
+    min-width: 30em;
+    min-height: 30em;
+    max-width: 30em;
+    max-height: 30em;
     }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -949,7 +955,7 @@ pre {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
     flex: 0 0 33%;
-    max-width: 33%;
+    /* max-width: 33%; */
     }
   .col-md-4 {
     -webkit-box-flex: 0;

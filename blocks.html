@@ -47,15 +47,20 @@
 							<div class="text text-2 pt-2 mt-3">
 								<span class="category mb-3 d-block"><a href="#">Game Development</a></span>
 	              <h3 class="mb-4">Pearlin Noise Isometric Game Demo</h3>
-	              <p class="mb-3">
-                  I developed a Bell Schedule and Calendar Application in Android Studio.
-                  I learned how to use a new language similar to Java called Kotlin in order to develop this application.
-                  The application functioned to alert students of what school period they were currently in and how much time was left.
-                  We implemented a sleek UI and feauturing a swipeable page viewer, lists, and a calender widget.
-                  The application also featured the use of a web-scraping API in order to quickly take advantage of the already well formated data for daily events in the less than well displayed school website.
-                  I was also able to show that grades could be scraped from Aries Student Portal after validating the login, but was not able to publish the result due to other commitments.
-                  I Functioned as Project Lead both organizing development schedule and contributing to the code base.
-                </p>
+	              <div class="mb-3">
+                  <h3>Background</h3>
+                  <p>I was heavily inspired by my interest in Dwarf Fortress at the time of developing this demo. I was curious about how video games were able to implement random terrain generation and I knew my computer at the time would find it difficult enough with 2D sprites let alone hundreds of 3D objects, so I decided I would experiment with making my own isometric clone of dwarf fortress.</p>
+                  <h3>General</h3>
+                  <p>In this project I made use of Perlin Nosie generator package in Unity 3D to create a black and white map that I calculated heights from. I then used these heights to determine the sprite type that should be placed at that height. </p>
+                  <h3>Blocks</h3>
+                  <p>These calculations were done using two different experimentally determined curves that labeled the cutoffs for each block type. Essentially, I had one function that would take an input random float and return the max height of the block at that x-y position, then another function that would take the random number and determine the block type. Originally using just one function seemed reasonable but produced to expectable results that appeared less than realistically random, so separating the two functions and determining the curves of each experimentally produced a far more visually satisfying appearance.</p>
+                  <h3>Creating an Isometric Appearance</h3>
+                  <p>In order to handle the visual appearance of being 2D/Isometric, but deal with the game-objects as if they were in a 3D environment with not only x and y, but also heights, I had to develop a function that could take a 3D game position and convert to x and y values that unity recognized each of the sprites to be located at. This handled the “back-end” of the game where moves etc. were handled, but to handle how the user would see the sprites I had to investigate the depth property of 2D sprites. The depth represents which layer a sprite is on, a sprite on a higher layer will cover over a sprite on a lower layer. This led me to developing yet another function to handle designating depth’s based on the “perceived” height of an object.</p>
+                  <h3>Takeaways</h3>
+                  <p>In this project I was able to expand my ideas of efficiency most of all. This may not seem to be the obvious takeaway but considering the quality of my pc at the time it took some effort to optimize how I stored the game data and accessed it to get the smooth quality seen in the video. This was one of my first introductions to the use of more complex data structures before taking a data structures class in college as I needed a way to store the blocks in the environment. At the time I just googled wat a HashMap was and decided that accessing blocks in the programming using a function call with a single parameter seemed easier typing-wise as opposed to having to use 3 sets of “[]” brackets each with function calls inside them. In hindsight, after taking college level data structures courses I see that this choice was frivolous, since searching or any of the other useful features of a HashMap were not utilized in this project. But it did make typing easier.</p>
+                  <h3>Future</h3>
+                  <p>In the future I think would remake this project into a 3D chess type game. I think I could now use my knowledge of game-tress from the Tablut project I recently completed in CS 61B to develop a powerful AI for the game too. I would also make underground viewing better. In a later iteration of this project I actually added the ability to have negative heights, essentially an underground, but with the layer-scrolling feature I implemented it would hide away entire heights when it should only hide blocks directly in front of the main character of user.</p>
+                </div>
 	            </div>
 						</div>
     			</div>
