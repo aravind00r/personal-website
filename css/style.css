@@ -8569,7 +8569,8 @@ textarea.form-control {
       }
       img,
       figure {
-        max-width: 100%;
+        max-width: 20%;
+        padding-right: 5px;
       }
 
 
