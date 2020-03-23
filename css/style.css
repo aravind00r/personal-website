@@ -536,6 +536,7 @@ pre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   /* margin-right: -15px; */
@@ -552,13 +553,16 @@ pre {
   }
   .no-gutters > .col,
   .no-gutters > [class*="col-"] {
-    /* padding-right: 0; */
-    /* padding-left: 0; */
-    padding: 4em 3em;
-    min-width: 30em;
-    min-height: 30em;
-    max-width: 30em;
-    max-height: 30em;
+    padding-right: 0;
+    padding-left: 0;
+    /* padding: 4em 3em; */
+    /* min-width: 30em; */
+    /* min-height: 30em; */
+    max-width: 250px;
+    /* max-height: 30em; */
+    /* max-width: 15em; */
+    /* max-height: 15em; */
+    /* width: auto; */
     }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -6254,11 +6258,6 @@ button.bg-dark:focus {
 .mx-5 {
   margin-right: 3rem !important; }
 
-.mb-5,
-.my-5 {
-  /* margin-bottom: 3rem !important; */
-  }
-
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important; }
@@ -7674,8 +7673,9 @@ h1, h2, h3, h4, h5,
       }
 
 .photography-entry {
-  height: 360px;
+  height: 250px;
   display: block;
+  width: 250px;
   z-index: 0;
   position: relative;
   }
@@ -7692,7 +7692,8 @@ h1, h2, h3, h4, h5,
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    }
   .photography-entry .text {
     opacity: 0;
     -moz-transition: all 0.3s ease;
@@ -7979,9 +7980,6 @@ h1, h2, h3, h4, h5,
         border-color: #fff;
         color: #f05d23; }
 
-.blog-entry {
-  /* margin-bottom: 6em; */
-  }
   .blog-entry .img {
     display: block;
     height: 300px;
@@ -8246,7 +8244,8 @@ textarea.form-control {
 .user-img {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  }
 
 .image-popup {
   cursor: -webkit-zoom-in;
@@ -8569,9 +8568,9 @@ textarea.form-control {
       }
       img,
       figure {
-        max-width: 20%;
+        /* max-width: 20%; */
         padding-right: 5px;
-        max-height: 350px;
+        max-height: 300px;
       }
 
 
