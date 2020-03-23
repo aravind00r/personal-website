@@ -8571,6 +8571,7 @@ textarea.form-control {
         /* max-width: 20%; */
         padding-right: 5px;
         max-height: 300px;
+        padding-bottom: 5px;
       }
 
 
