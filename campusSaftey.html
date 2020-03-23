@@ -47,9 +47,21 @@
               </div>
 							<div class="text text-2 pt-2 mt-3">
 								<span class="category mb-3 d-block"><a href="#">Cross Platform Mobile Development</a></span>
-	              <h3 class="mb-4">Campus Saftey App</h3>
+                <h3 class="mb-4">Campus Saftey App</h3>
+                <div class="mb-3">
+                  <h3>General</h3>
+                  <p>I worked as a solo developer along with several business students at UC Berkeley to create an application we wanted to see on campus. At the time we were actually competing with another application called the wildfire application. Both of us were attempting to make an application that students could use to gather in groups to walk around campus more safely at night or if they feel unsafe. </p>
+                  <h3>The Start</h3>
+                  <p>I started the ball rolling reviewing my other react native project written in java script and made the decision to continue using that framework to develop this application to make it cross platform and reach a wider audience. </p>
+                  <h3>The UI</h3>
+                  <p>I also explored an interesting idea for the UI that can be seen in the images above. I thought that using the Instagram stories set up for users would be cool. I found another git repo that had done something similar and learned how to achieve the affect and implemented it for this project. I also had a lot of fun messing around with the linear gradient property in the react framework. By adding a random color function to the tsx script I was able to achieve a randomly generated linear gradient for the screens of the app on every load. This is likely a feature I would not keep, but it is neater and quicker than coming up with a nice UI format and design, so I went with this temporarily. Also, it was fun! </p>
+                  <h3>The Backend</h3>
+                  <p>The backend was also a very interesting experience as I had to implement a way to display activity of the currently online users while hiding the users that had once been online but no longer. The solution I came up with was a listener in the code to wait for a signal from the phone saying that the application was swiped off the screen or put in the background state, and hide that user temporarily when the app is swiped off. I also added a complimentary listener for when the app was brought back to the forefront on the phone to upload the temporary copy the user had of their own data back into the database showing they were online. The advantage of this system was you must swipe off to exit the application most of the time, so outside of edge cases like crash and shutdown the database stays clean of old inactive users. A future addition would be to add a background garbage collector in the data base functions to run on some long period interval to sweep for users who have been inactive for an extended time. </p>
+                  <h3>Future</h3>
+                  <p>Since working on this project, I have moved onto other things due to the quality of the competition and their development resources. But the experience was very beneficial, and I am glad I had the chance to create this codebase for anyone who wants a working UI and backend for storing and displaying online users. </p>
+                </div>
 	              <p class="mb-3">
-                  <p><li><a href=""><i>Github Link</i></a></li></p>
+                  <p><li><a href="https://github.com/aravind00r/campus-saftey"><i>Github Link</i></a></li></p>
                 </p>
 	            </div>
 						</div>
