@@ -6242,7 +6242,12 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important; }
-
+.mb-new-web {
+  color: red;
+  font-size:60px;
+  width:auto;
+  background-color: black;
+}
 .ml-4,
 .mx-4 {
   margin-left: 1.5rem !important; }
